@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "testing": {
+    "testing-page": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "testing:build:production"
+              "browserTarget": "testing-page:build:production"
             },
             "development": {
-              "browserTarget": "testing:build:development"
+              "browserTarget": "testing-page:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "testing:build"
+            "browserTarget": "testing-page:build"
           }
         },
         "test": {
@@ -79,7 +79,7 @@
           "options": {
             "polyfills": [
               "zone.js",
-              "zone.js/testing"
+              "zone.js/testing-page"
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
